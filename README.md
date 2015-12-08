@@ -1,6 +1,6 @@
 # Smallo Library
 
-Smallo is a Big-O notation library in Java. 
+Smallo is a [Big-O](https://en.wikipedia.org/wiki/Big_O_notation) notation library in Java. 
 
 It contains several classic algorithms, which are often taught to students, as 
 part of their Computer Science course, at universities around the world. Smallo 
@@ -12,7 +12,55 @@ time complexity they experience.
 ## Algorithms
 
 Smallo has grouped algorithms into the following groups:
-1. Math: Factorial, Fibonacci
-2. Search: Binary, Linear
-3. Shuffle: Fisher-Yates
-4. Sort: BogoSort, BubbleSort, InsertionSort, MergeSort, QuickSort, SelectionSort
+
+1. Math: [Factorial](https://github.com/otaviofff/smallo/blob/master/src/main/java/org/smallo/algorithms/math/adapters/Factorial.java), [Fibonacci](https://github.com/otaviofff/smallo/blob/master/src/main/java/org/smallo/algorithms/math/adapters/Fibonacci.java)
+2. Search: [Binary](https://github.com/otaviofff/smallo/blob/master/src/main/java/org/smallo/algorithms/search/adapters/BinarySearch.java), [Linear](https://github.com/otaviofff/smallo/blob/master/src/main/java/org/smallo/algorithms/search/adapters/LinearSearch.java)
+3. Shuffle: [Fisher-Yates](https://github.com/otaviofff/smallo/blob/master/src/main/java/org/smallo/algorithms/shuffle/adapters/FisherYatesShuffle.java)
+4. Sort: [BogoSort](https://github.com/otaviofff/smallo/blob/master/src/main/java/org/smallo/algorithms/sort/adapters/BogoSort.java), [BubbleSort](https://github.com/otaviofff/smallo/blob/master/src/main/java/org/smallo/algorithms/sort/adapters/BubbleSort.java), [InsertionSort](https://github.com/otaviofff/smallo/blob/master/src/main/java/org/smallo/algorithms/sort/adapters/InsertionSort.java), [MergeSort](https://github.com/otaviofff/smallo/blob/master/src/main/java/org/smallo/algorithms/sort/adapters/MergeSort.java), [QuickSort](https://github.com/otaviofff/smallo/blob/master/src/main/java/org/smallo/algorithms/sort/adapters/QuickSort.java), [SelectionSort](https://github.com/otaviofff/smallo/blob/master/src/main/java/org/smallo/algorithms/sort/adapters/SelectionSort.java)
+
+## Usage
+
+Examples under namespace [org.smallo.algorithms.math](https://github.com/otaviofff/smallo/blob/master/src/main/java/org/smallo/algorithms/math):
+
+```java
+//Calculates the factorial of 10.
+java -cp smallo.jar org.smallo.algorithms.math.Console -n=10 -a=factorial
+
+//Calculates the fibonacci of 12.
+java -cp smallo.jar org.smallo.algorithms.math.Console -n=12 -a=fibonacci
+```
+
+Examples under namespace [org.smallo.algorithms.search](https://github.com/otaviofff/smallo/blob/master/src/main/java/org/smallo/algorithms/search):
+
+```java
+//Executes a binary search for number 6900, 
+//in a randomly-generated array with 155000 elements.
+java -cp smallo.jar org.smallo.algorithms.search.Console -n=6900 -l=155000 -a=binary
+
+//Executes a linear search for number 77, 
+//in a randomly-generated array with 150 elements.
+java -cp smallo.jar org.smallo.algorithms.search.Console -n=77 -l=150 -a=linear
+```
+
+Examples under namespace [org.smallo.algorithms.shuffle](https://github.com/otaviofff/smallo/blob/master/src/main/java/org/smallo/algorithms/shuffle):
+
+```java
+//Shuffles a randonly-generated array with 30 elements.
+java -cp smallo.jar org.smallo.algorithms.shuffle.Console -l=30 -a=fisher
+```
+
+Examples under namespace [org.smallo.algorithms.sort](https://github.com/otaviofff/smallo/blob/master/src/main/java/org/smallo/algorithms/sort):
+
+```java
+//Sorts a ramdomly-generated array, with 3200 elements, 
+//according to MergeSort.
+java -cp smallo.jar org.smallo.algorithms.sort.Console -l=3200 -a=merge -v
+
+//Sorts a ramdomly-generated array, with 45 elements, 
+//according to QuickSort.
+java -cp smallo.jar org.smallo.algorithms.sort.Console -l=45 -a=quick -v
+```
+
+Note that sorting algorithms can be executed with an extra argument, named ```-v```, which stands for "verbose". When this agument is given, Smallo prints both the randonly-generated array (input) and the sorted array (output). Smallo also prints the time elapsed, so we can easily compare which algorithm performs better.
+
+Computer Science is fun. Enjoy your studies =)
