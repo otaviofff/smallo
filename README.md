@@ -63,4 +63,20 @@ java -cp smallo.jar org.smallo.algorithms.sort.Console -l=45 -a=quick -v
 
 Note that sorting algorithms can be executed with an extra argument, named ```-v```, which stands for "verbose". When this agument is given, Smallo prints both the randonly-generated array (input) and the sorted array (output). Smallo also prints the time elapsed, so we can easily compare which algorithm performs better.
 
+## Output
+
+When any algorithm is executed, Smallo prints an output report, so that we can easily check the actual results. The following example shows the report printed for a QuickSort execution. 
+
+```java
+java -cp smallo.jar org.smallo.algorithms.sort.Console -l=25 -a=quick -v
+Input: 
+4 23 13 14 1 18 6 10 9 15 15 7 24 17 5 13 20 14 8 17 2 9 9 20 11 
+
+Sorted: 
+1 2 4 5 6 7 8 9 9 9 10 11 13 13 14 14 15 15 17 17 18 20 20 23 24 
+
+Elapsed:
+1 ms
+```
+
 Computer Science is fun. Enjoy your studies =)
