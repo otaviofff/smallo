@@ -65,7 +65,7 @@ Note that sorting algorithms can be executed with an extra argument, named ```-v
 
 ## Output
 
-When any algorithm is executed, Smallo prints an output report, so that we can easily check the actual results. The following example shows the report printed for a QuickSort execution. 
+When any algorithm is executed, Smallo prints an output report, so that we can check the actual results. The following example shows the report printed for a QuickSort execution. 
 
 ```java
 java -cp smallo.jar org.smallo.algorithms.sort.Console -l=25 -a=quick -v
