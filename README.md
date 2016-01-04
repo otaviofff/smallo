@@ -11,7 +11,7 @@ time complexity they experience.
 
 ## Algorithms
 
-Smallo has grouped algorithms into the following groups:
+Smallo has grouped algorithms into the following packages:
 
 1. Math: [Factorial](https://github.com/otaviofff/smallo/blob/master/src/main/java/org/smallo/algorithms/math/adapters/Factorial.java), [Fibonacci](https://github.com/otaviofff/smallo/blob/master/src/main/java/org/smallo/algorithms/math/adapters/Fibonacci.java)
 2. Search: [Binary](https://github.com/otaviofff/smallo/blob/master/src/main/java/org/smallo/algorithms/search/adapters/BinarySearch.java), [Linear](https://github.com/otaviofff/smallo/blob/master/src/main/java/org/smallo/algorithms/search/adapters/LinearSearch.java)
